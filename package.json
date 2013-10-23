@@ -1,8 +1,15 @@
 {
+<<<<<<< HEAD
   "name": "node-js-getting-started",
   "version": "0.1.5",
   "description": "A sample Node.js app using Express 4",
   "main": "index.js",
+=======
+  "name": "node-js-sample",
+  "version": "0.0.3",
+  "description": "a sample node.js app for heroku",
+  "main": "web.js",
+>>>>>>> Update node and npm
   "scripts": {
     "start": "node index.js"
   },
@@ -14,8 +21,8 @@
     "node": "0.12.7"
   },
   "engines": {
-    "node": "0.10.13",
-    "npm": "1.3.2"
+    "node": "0.10.21",
+    "npm": "1.3.11"
   },
   "repository": {
     "type": "git",
