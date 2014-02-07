@@ -14,11 +14,15 @@
     "start": "node index.js"
   },
   "dependencies": {
+<<<<<<< HEAD
     "express": "4.13.3",
     "twit": "~2.2.2"
   },
   "engines": {
     "node": "0.12.7"
+=======
+    "express": "~3.4.x"
+>>>>>>> Update version of Express
   },
   "engines": {
     "node": "0.10.x",
