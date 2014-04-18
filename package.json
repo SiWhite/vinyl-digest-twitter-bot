@@ -13,7 +13,7 @@
 >>>>>>> Update node and npm
 =======
   "version": "0.1.0",
-  "description": "A sample node.js app for heroku",
+  "description": "A sample Node.js app using Express 4",
   "main": "index.js",
 >>>>>>> rename web.js to index.js, a la npm defaults
   "scripts": {
