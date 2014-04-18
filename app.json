@@ -1,11 +1,15 @@
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
   "name": "Vinyl Digest Twitter bot",
   "description": "Twitter bot for retweeting #vinyl",
   "repository": "https://github.com/SiWhite/vinyl-digest-twitter-bot",
   "keywords": ["node", "express", "twit"]
 =======
   "name": "Node.js  Slideshow",
+=======
+  "name": "Node.js Sample",
+>>>>>>> update app.json
   "description": "A barebones Node.js app using Express 4",
   "repository": "https://github.com/heroku/node-js-sample",
   "logo": "http://node-js-sample.herokuapp.com/node.svg",
