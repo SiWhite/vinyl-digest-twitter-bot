@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Twitter Bot for @vinyl_digest
 
 A simple Node.js app using [Twit](https://github.com/ttezel/twit).
@@ -18,6 +19,9 @@ Asumming you have [Node.js](http://nodejs.org/) and [Heroku Toolbelt](https://to
 =======
 =======
 # node-js-sample
+=======
+# node-js-getting-started
+>>>>>>> Replace node-js-sample by node-js-getting-started
 
 A barebones Node.js app using [Express 4](http://expressjs.com/).
 
@@ -28,8 +32,8 @@ Make sure you have [Node.js](http://nodejs.org/) and the [Heroku Toolbelt](https
 >>>>>>> improve readme
 
 ```sh
-git clone git@github.com:heroku/node-js-sample.git # or clone your own fork
-cd node-js-sample
+git clone git@github.com:heroku/node-js-getting-started.git # or clone your own fork
+cd node-js-getting-started
 npm install
 npm start
 ```

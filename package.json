@@ -1,5 +1,6 @@
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
   "name": "node-js-getting-started",
   "version": "0.1.5",
   "description": "A sample Node.js app using Express 4",
@@ -12,6 +13,9 @@
   "main": "web.js",
 >>>>>>> Update node and npm
 =======
+=======
+  "name": "node-js-getting-started",
+>>>>>>> Replace node-js-sample by node-js-getting-started
   "version": "0.1.0",
   "description": "A sample Node.js app using Express 4",
   "main": "index.js",
