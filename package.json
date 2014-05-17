@@ -26,6 +26,7 @@
   "dependencies": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "express": "4.13.3",
     "twit": "~2.2.2"
   },
@@ -37,6 +38,9 @@
 =======
     "express": "^4.0.0"
 >>>>>>> rename web.js to index.js, a la npm defaults
+=======
+    "express": "~3.4.x"
+>>>>>>> Back to Express 3.4
   },
   "engines": {
     "node": "0.10.x"
