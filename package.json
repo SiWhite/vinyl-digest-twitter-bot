@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
   "name": "node-js-getting-started",
+<<<<<<< HEAD
   "version": "0.1.5",
   "description": "A sample Node.js app using Express 4",
   "main": "index.js",
@@ -17,6 +18,9 @@
   "name": "node-js-getting-started",
 >>>>>>> Replace node-js-sample by node-js-getting-started
   "version": "0.1.0",
+=======
+  "version": "0.1.2",
+>>>>>>> upgrade express dependency
   "description": "A sample Node.js app using Express 4",
   "main": "index.js",
 >>>>>>> rename web.js to index.js, a la npm defaults
@@ -24,6 +28,7 @@
     "start": "node index.js"
   },
   "dependencies": {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -41,6 +46,9 @@
 =======
     "express": "~3.4.x"
 >>>>>>> Back to Express 3.4
+=======
+    "express": "~4.9.x"
+>>>>>>> upgrade express dependency
   },
   "engines": {
     "node": "0.10.x"
@@ -55,11 +63,14 @@
     "express"
   ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   "author": "Mark Pundsack",
   "contributors": [
     "Zeke Sikelianos <zeke@sikelianos.com> (http://zeke.sikelianos.com)"
   ],
 >>>>>>> update license, contributors, and keywords
+=======
+>>>>>>> upgrade express dependency
   "license": "MIT"
 }
