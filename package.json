@@ -3,6 +3,7 @@
 <<<<<<< HEAD
   "name": "node-js-getting-started",
 <<<<<<< HEAD
+<<<<<<< HEAD
   "version": "0.1.5",
   "description": "A sample Node.js app using Express 4",
   "main": "index.js",
@@ -21,6 +22,9 @@
 =======
   "version": "0.1.2",
 >>>>>>> upgrade express dependency
+=======
+  "version": "0.1.3",
+>>>>>>> upgrade to node 0.12.x
   "description": "A sample Node.js app using Express 4",
   "main": "index.js",
 >>>>>>> rename web.js to index.js, a la npm defaults
@@ -51,7 +55,7 @@
 >>>>>>> upgrade express dependency
   },
   "engines": {
-    "node": "0.10.x"
+    "node": "0.12.x"
   },
   "repository": {
     "type": "git",
