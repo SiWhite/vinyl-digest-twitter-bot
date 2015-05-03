@@ -25,7 +25,7 @@ Asumming you have [Node.js](http://nodejs.org/) and [Heroku Toolbelt](https://to
 
 A barebones Node.js app using [Express 4](http://expressjs.com/).
 
-This application support the [Getting Started with Node on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs) article - check it out.
+This application supports the [Getting Started with Node on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs) article - check it out.
 
 ## Running Locally
 
