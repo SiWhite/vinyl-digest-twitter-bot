@@ -17,6 +17,11 @@
   "description": "A barebones Node.js app using Express 4",
   "repository": "https://github.com/heroku/node-js-getting-started",
   "logo": "http://node-js-sample.herokuapp.com/node.svg",
+<<<<<<< HEAD
   "keywords": ["node", "express", "static"]
 >>>>>>> add app.json
+=======
+  "keywords": ["node", "express", "static"],
+  "image": "heroku/node"
+>>>>>>> add "image" key for heroku-docker
 }
