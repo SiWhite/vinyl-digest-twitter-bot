@@ -22,6 +22,10 @@
 >>>>>>> add app.json
 =======
   "keywords": ["node", "express", "static"],
+<<<<<<< HEAD
   "image": "heroku/node"
 >>>>>>> add "image" key for heroku-docker
+=======
+  "image": "heroku/nodejs"
+>>>>>>> use correct image name
 }
