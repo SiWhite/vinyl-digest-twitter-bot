@@ -5,6 +5,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   "version": "0.1.5",
   "description": "A sample Node.js app using Express 4",
   "main": "index.js",
@@ -29,6 +30,9 @@
 =======
   "version": "0.1.4",
 >>>>>>> new UI
+=======
+  "version": "0.1.5",
+>>>>>>> updated dependencies
   "description": "A sample Node.js app using Express 4",
   "main": "index.js",
 >>>>>>> rename web.js to index.js, a la npm defaults
@@ -36,6 +40,7 @@
     "start": "node index.js"
   },
   "dependencies": {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -61,9 +66,13 @@
 >>>>>>> new UI
     "express": "~4.9.x"
 >>>>>>> upgrade express dependency
+=======
+    "ejs": "2.3.3",
+    "express": "4.13.3"
+>>>>>>> updated dependencies
   },
   "engines": {
-    "node": "0.12.2"
+    "node": "0.12.7"
   },
   "repository": {
     "type": "git",
