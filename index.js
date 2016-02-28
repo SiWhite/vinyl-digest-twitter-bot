@@ -14,8 +14,20 @@ app.get('/', function(request, response) {
   response.render('pages/index');
 });
 
-app.listen(app.get('port'), function() {
-  console.log('Node app is running on port', app.get('port'));
+var twitter = new Twit(twitInfo);
+
+var stream = twitter.stream('statuses/filter', {track: '#vinyl'});
+
+stream.on('connect', function(request) {
+	console.log('Connected to Twitter API');
 });
+
+stream.on('tweet', function(tweet){
+	var tweetID = tweet.id_str;
+	console.log(tweetID);
+	twitter.post('statuses/retweet/:id', { id: tweetID }, function (err, data, response) {
+		tweetID = '';
+	})
+})
 
 
