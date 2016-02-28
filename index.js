@@ -14,20 +14,20 @@ app.get('/', function(request, response) {
   response.render('pages/index');
 });
 
-var twitter = new Twit(twitInfo);
+// var twitter = new Twit(twitInfo);
 
-var stream = twitter.stream('statuses/filter', {track: '#vinyl'});
+// var stream = twitter.stream('statuses/filter', {track: '#vinyl'});
 
-stream.on('connect', function(request) {
-	console.log('Connected to Twitter API');
-});
+// stream.on('connect', function(request) {
+// 	console.log('Connected to Twitter API');
+// });
 
-stream.on('tweet', function(tweet){
-	var tweetID = tweet.id_str;
-	console.log(tweetID);
-	twitter.post('statuses/retweet/:id', { id: tweetID }, function (err, data, response) {
-		tweetID = '';
-	})
-})
+// stream.on('tweet', function(tweet){
+// 	var tweetID = tweet.id_str;
+// 	console.log(tweetID);
+// 	twitter.post('statuses/retweet/:id', { id: tweetID }, function (err, data, response) {
+// 		tweetID = '';
+// 	})
+// })
 
 
