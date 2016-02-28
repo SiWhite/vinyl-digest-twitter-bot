@@ -68,8 +68,13 @@
 >>>>>>> upgrade express dependency
 =======
     "ejs": "2.3.3",
+<<<<<<< HEAD
     "express": "4.13.3"
 >>>>>>> updated dependencies
+=======
+    "express": "4.13.3",
+    "twit": "~2.2.2"
+>>>>>>> trying to add twit
   },
   "engines": {
     "node": "0.12.7"
