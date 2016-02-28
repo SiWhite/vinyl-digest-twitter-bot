@@ -3,7 +3,7 @@ var app = express();
 var Twit = require('twit');
 var twitInfo = require('./config.js'); //add twitter app keys/tokens in config.js
 
-app.set('port', (process.env.PORT || 5000));
+app.listen(process.env.PORT || 5000);
 app.use(express.static(__dirname + '/public'));
 
 // views is directory for all template files
@@ -22,12 +22,12 @@ stream.on('connect', function(request) {
 	console.log('Connected to Twitter API');
 });
 
-// stream.on('tweet', function(tweet){
-// 	var tweetID = tweet.id_str;
-// 	console.log(tweetID);
-// 	twitter.post('statuses/retweet/:id', { id: tweetID }, function (err, data, response) {
-// 		tweetID = '';
-// 	})
-// })
+stream.on('tweet', function(tweet){
+	var tweetID = tweet.id_str;
+	console.log(tweetID);
+	twitter.post('statuses/retweet/:id', { id: tweetID }, function (err, data, response) {
+		tweetID = '';
+	})
+})
 
 
