@@ -22,12 +22,12 @@ stream.on('connect', function(request) {
 	console.log('Connected to Twitter API');
 });
 
-stream.on('tweet', function(tweet){
-	var tweetID = tweet.id_str;
-	console.log(tweetID);
-	twitter.post('statuses/retweet/:id', { id: tweetID }, function (err, data, response) {
-		tweetID = '';
-	})
-})
+// stream.on('tweet', function(tweet){
+// 	var tweetID = tweet.id_str;
+// 	console.log(tweetID);
+// 	twitter.post('statuses/retweet/:id', { id: tweetID }, function (err, data, response) {
+// 		tweetID = '';
+// 	})
+// })
 
 
