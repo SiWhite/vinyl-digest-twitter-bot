@@ -2,17 +2,8 @@ var express = require('express');
 var app = express();
 var Twit = require('twit');
 var twitInfo = require('./config.js'); //add twitter app keys/tokens in config.js
-app.get('/', function(req, res){ res.send('The robot is happily running.'); });
+app.get('/', function(req, res){ res.send('Vinyl Digest bot is happily running.'); });
 app.listen(process.env.PORT || 5000);
-// app.use(express.static(__dirname + '/public'));
-
-// // views is directory for all template files
-// app.set('views', __dirname + '/views');
-// app.set('view engine', 'ejs');
-
-// app.get('/', function(request, response) {
-//   response.render('pages/index');
-// });
 
 var twitter = new Twit(twitInfo);
 
