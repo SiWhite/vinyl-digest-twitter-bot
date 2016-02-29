@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   "name": "Vinyl Digest Twitter bot",
   "description": "Twitter bot for retweeting #vinyl",
   "repository": "https://github.com/SiWhite/vinyl-digest-twitter-bot",
@@ -32,6 +33,9 @@
 }
 =======
   "name": "Vinyl; Digest Twitter bot",
+=======
+  "name": "Vinyl Digest Twitter bot",
+>>>>>>> add regex to filter out that damn TV show
   "description": "Twitter bot for retweeting #vinyl",
   "repository": "https://github.com/SiWhite/vinyl-digest-twitter-bot",
   "keywords": ["node", "express", "twit"]
