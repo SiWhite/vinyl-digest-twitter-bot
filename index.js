@@ -13,6 +13,17 @@ stream.on('connect', function(request) {
 	console.log('Connected to Twitter API');
 });
 
+stream.on('disconnect', function(request) {
+	console.log('Disconnected from Twitter API');
+});
+
+// twitter.get('statuses/home_timeline', function (err, reply) {
+//   if (err)
+//     return console.log('err', err)
+
+//   console.log('reply', reply)
+// })
+
 stream.on('tweet', function(tweet){
 	var tweetID = tweet.id_str;
 	console.log(tweetID);
@@ -20,5 +31,8 @@ stream.on('tweet', function(tweet){
 		tweetID = '';
 	})
 })
+stream.on('error', function (tweet) {
+	console.log(tweet); 
+});
 
 
