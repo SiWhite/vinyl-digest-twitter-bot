@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   "name": "Vinyl Digest Twitter bot",
   "description": "Twitter bot for retweeting #vinyl",
   "repository": "https://github.com/SiWhite/vinyl-digest-twitter-bot",
@@ -29,3 +30,10 @@
   "image": "heroku/nodejs"
 >>>>>>> use correct image name
 }
+=======
+  "name": "Vinyl; Digest Twitter bot",
+  "description": "Twitter bot for retweeting #vinyl",
+  "repository": "https://github.com/SiWhite/vinyl-digest-twitter-bot",
+  "keywords": ["node", "express", "twit"]
+}
+>>>>>>> update README and app.json, uninstall ejs module and add comments to index.js

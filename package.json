@@ -46,6 +46,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "express": "4.13.3",
     "twit": "~2.2.2"
   },
@@ -72,6 +73,8 @@
     "express": "4.13.3"
 >>>>>>> updated dependencies
 =======
+=======
+>>>>>>> update README and app.json, uninstall ejs module and add comments to index.js
     "express": "4.13.3",
     "twit": "~2.2.2"
 >>>>>>> trying to add twit

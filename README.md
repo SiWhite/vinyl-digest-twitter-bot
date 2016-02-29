@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Twitter Bot for @vinyl_digest
 
 A simple Node.js app using [Twit](https://github.com/ttezel/twit).
@@ -22,11 +23,15 @@ Asumming you have [Node.js](http://nodejs.org/) and [Heroku Toolbelt](https://to
 =======
 # node-js-getting-started
 >>>>>>> Replace node-js-sample by node-js-getting-started
+=======
+# Twitter Bot for @vinyl_digest
+>>>>>>> update README and app.json, uninstall ejs module and add comments to index.js
 
-A barebones Node.js app using [Express 4](http://expressjs.com/).
+A simple Node.js app using [Twit](https://github.com/ttezel/twit).
 
-This application supports the [Getting Started with Node on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs) article - check it out.
+Create a config.js file in your root dir containing your twitter keys/secrets:
 
+<<<<<<< HEAD
 ## Running Locally
 
 >>>>>>> update description
@@ -74,3 +79,11 @@ For more information about using Node.js on Heroku, see these Dev Center article
 >>>>>>> Update README.md
 - [Using WebSockets on Heroku with Node.js](https://devcenter.heroku.com/articles/node-websockets)
 >>>>>>> Update documentation links
+=======
+module.exports = {
+	consumer_key: "XXXX",
+	consumer_secret: "XXXX",
+	access_token: "XXXX",
+	access_token_secret: "XXXX"
+}
+>>>>>>> update README and app.json, uninstall ejs module and add comments to index.js
