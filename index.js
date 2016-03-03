@@ -9,7 +9,7 @@ app.get('/', function(req, res){ res.send('Vinyl Digest bot is happily running.'
 app.listen(process.env.PORT || 5000);
 
 // reject tweets about that damn TV show...
-var regexReject = new RegExp('^.*(épisode|episode|hbo|@HBO|@vinylHBO|s01|@SkyAtlanticHD|@SkyAtlantic|TV|carpet|flooring|S1|#vinylHBO|RT|Decal|banner|print|Scorsese|Laminate|binding|signs|nude).*$', 'i');
+var regexReject = new RegExp('^.*(ebay|episode|hbo|@HBO|@vinylHBO|s01|@SkyAtlanticHD|@SkyAtlantic|TV|carpet|flooring|S1|#vinylHBO|RT|Decal|banner|print|Scorsese|Laminate|binding|signs|nude).*$', 'i');
 
 var twitter = new Twit(twitInfo);
 
@@ -25,7 +25,7 @@ stream.on('disconnect', function(request) {
 
 stream.on('tweet', function(tweet){
 
-	var tweetID = tweet.id_str;
+	var tweetID = tweet.id_str;-
 
 	if (regexReject.test(tweet.text)) {
 		console.log('TWEET REJECTED!!!');
