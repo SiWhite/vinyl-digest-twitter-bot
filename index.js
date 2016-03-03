@@ -24,22 +24,19 @@ stream.on('disconnect', function(request) {
 });
 
 stream.on('tweet', function(tweet){
-	setInterval(function() {
-		console.log(i);
-		i++;
-		var tweetID = tweet.id_str;
 
-		if (regexReject.test(tweet.text)) {
-			console.log('TWEET REJECTED!!!');
-			return;
-		} else {
-			console.log(tweetID);
-			twitter.post('statuses/retweet/:id', { id: tweetID }, function (err, data, response) {
-				tweetID = '';
-				console.log('TWEET POSTED!!!');
-			});
-		}
-	}, 300000);
+	var tweetID = tweet.id_str;
+
+	if (regexReject.test(tweet.text)) {
+		console.log('TWEET REJECTED!!!');
+		return;
+	} else {
+		console.log(tweetID);
+		twitter.post('statuses/retweet/:id', { id: tweetID }, function (err, data, response) {
+			tweetID = '';
+			console.log('TWEET POSTED!!!');
+		});
+	}
 });
 
 stream.on('error', function (tweet) {
