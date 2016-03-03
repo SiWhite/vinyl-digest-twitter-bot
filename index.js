@@ -35,7 +35,9 @@ stream.on('tweet', function(tweet){
 			console.log('TWEET POSTED!!!');
 		});
 	}
-})
+});
+
+
 stream.on('error', function (tweet) {
 	console.log(tweet);
 });
