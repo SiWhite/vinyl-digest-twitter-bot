@@ -24,8 +24,14 @@ stream.on('disconnect', function(request) {
 	console.log('Disconnected from Twitter API');
 });
 
-stream.on('tweet', function(tweet){
+stream.on('tweet', function(tweet) {
+	setInterval(function() {
+		reTweet(tweet) }, 300000
+	);
+});
 
+function reTweet(tweet) {
+	console.log('retweet');
 	var tweetID = tweet.id_str;
 
 	if (regexReject.test(tweet.text)) {
@@ -38,7 +44,7 @@ stream.on('tweet', function(tweet){
 			console.log('TWEET POSTED!!!');
 		});
 	}
-});
+};
 
 stream.on('error', function (tweet) {
 	console.log(tweet);
