@@ -1,8 +1,9 @@
+"use strict";
+
 var express = require('express');
 var app = express();
 var Twit = require('twit');
 var twitInfo = require('./config.js'); //add twitter app keys/tokens in config.js
-var i = 1;
 
 // this is for heroku deployment, so we can see if it's running
 app.get('/', function(req, res){ res.send('Vinyl Digest bot is happily running.'); });
@@ -25,7 +26,7 @@ stream.on('disconnect', function(request) {
 
 stream.on('tweet', function(tweet){
 
-	var tweetID = tweet.id_str;-
+	var tweetID = tweet.id_str;
 
 	if (regexReject.test(tweet.text)) {
 		console.log('TWEET REJECTED!!!');
