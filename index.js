@@ -10,43 +10,47 @@ app.get('/', function(req, res){ res.send('Vinyl Digest bot is happily running.'
 app.listen(process.env.PORT || 5000);
 
 // reject tweets about that damn TV show...
-var regexReject = new RegExp('^.*(ebay|episode|hbo|@HBO|@vinylHBO|s01|@SkyAtlanticHD|@SkyAtlantic|TV|carpet|flooring|S1|#vinylHBO|RT|Decal|banner|print|Scorsese|Laminate|binding|signs|nude).*$', 'i');
+var regexReject = new RegExp('^.*(show|Olivia|Wilde|Sky|ebay|episode|hbo|@HBO|@vinylHBO|s01|@SkyAtlanticHD|@SkyAtlantic|TV|carpet|flooring|S1|#vinylHBO|RT|Decal|banner|print|Scorsese|Laminate|binding|signs|nude).*$', 'i');
 
 var twitter = new Twit(twitInfo);
 
-var stream = twitter.stream('statuses/filter', {track: '#vinyl', language: 'en'}); // set the hashtag to retweet, and language
-
-stream.on('connect', function(request) {
-	console.log('Connected to Twitter API');
-});
-
-stream.on('disconnect', function(request) {
-	console.log('Disconnected from Twitter API');
-});
-
-stream.on('tweet', function(tweet) {
-	setInterval(function() {
-		reTweet(tweet) }, 300000
-	);
-});
-
-function reTweet(tweet) {
-	console.log('retweet');
-	var tweetID = tweet.id_str;
-
-	if (regexReject.test(tweet.text)) {
-		console.log('TWEET REJECTED!!!');
-		return;
-	} else {
-		console.log(tweetID);
-		twitter.post('statuses/retweet/:id', { id: tweetID }, function (err, data, response) {
-			tweetID = '';
-			console.log('TWEET POSTED!!!');
-		});
-	}
+Date.prototype.yyyymmdd = function() {
+	var yyyy = this.getFullYear().toString();
+	var mm = (this.getMonth()+1).toString(); // getMonth() is zero-based
+	var dd  = (this.getDate() -1).toString(); //yesterday, as twitter seems to use US timestamp
+	return yyyy +'-'+ (mm[1]?mm:"0"+mm[0]) +'-'+ (dd[1]?dd:"0"+dd[0]); // padding
 };
 
-stream.on('error', function (tweet) {
-	console.log(tweet);
-});
+var date = new Date();
+date = date.yyyymmdd();
+var prevTweetID = '';
 
+setInterval(function() {
+	console.log('setInterval ran');
+	reTweet(); }, 300000 // 5 minutes
+);
+
+function reTweet() {
+	console.log('prevTweetID = '+prevTweetID);
+
+	twitter.get('/search/tweets', { q: '#vinyl since:'+date, count: 1, language: 'en' }, function(err, data, response){
+		var tweet = data.statuses[0];
+		if (tweet !== undefined) {
+			var tweetID = tweet.id_str
+			console.log('tweetID = '+tweetID);
+			if ( regexReject.test(tweet.text) || tweetID === undefined || tweetID == prevTweetID ) {
+				console.log('TWEET REJECTED!!!');
+				return;
+			} else {
+				twitter.post('statuses/retweet/:id', { id: tweetID }, function (err, data, response) {
+					prevTweetID = tweetID;
+					tweetID = '';
+					console.log('TWEET POSTED!!!');
+				});
+			}
+		} else {
+			console.log('tweet is undefined');
+			return;
+		}
+	});
+};
