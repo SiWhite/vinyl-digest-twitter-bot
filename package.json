@@ -1,105 +1,26 @@
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
   "name": "node-js-getting-started",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  "version": "0.1.5",
   "description": "A sample Node.js app using Express 4",
   "main": "index.js",
-=======
-  "name": "node-js-sample",
-<<<<<<< HEAD
-  "version": "0.0.3",
-  "description": "a sample node.js app for heroku",
-  "main": "web.js",
->>>>>>> Update node and npm
-=======
-=======
-  "name": "node-js-getting-started",
->>>>>>> Replace node-js-sample by node-js-getting-started
-  "version": "0.1.0",
-=======
-  "version": "0.1.2",
->>>>>>> upgrade express dependency
-=======
-  "version": "0.1.3",
->>>>>>> upgrade to node 0.12.x
-=======
-  "version": "0.1.4",
->>>>>>> new UI
-=======
-  "version": "0.1.5",
->>>>>>> updated dependencies
-  "description": "A sample Node.js app using Express 4",
-  "main": "index.js",
->>>>>>> rename web.js to index.js, a la npm defaults
+  "version": "0.0.1",
+  "description": "Simple Twitter Bot",
   "scripts": {
     "start": "node index.js"
   },
   "dependencies": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     "express": "4.13.3",
     "twit": "~2.2.2"
   },
   "engines": {
-    "node": "0.12.7"
-=======
-    "express": "~3.4.x"
->>>>>>> Update version of Express
-=======
-    "express": "^4.0.0"
->>>>>>> rename web.js to index.js, a la npm defaults
-=======
-    "express": "~3.4.x"
->>>>>>> Back to Express 3.4
-=======
-=======
-    "ejs": "^2.3.1",
->>>>>>> new UI
-    "express": "~4.9.x"
->>>>>>> upgrade express dependency
-=======
+    "node": "0.12.7",
+    "express": "~4.9.x",
     "ejs": "2.3.3",
-<<<<<<< HEAD
-    "express": "4.13.3"
->>>>>>> updated dependencies
-=======
-=======
->>>>>>> update README and app.json, uninstall ejs module and add comments to index.js
     "express": "4.13.3",
     "twit": "~2.2.2"
->>>>>>> trying to add twit
-  },
-  "engines": {
-    "node": "0.12.7"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/heroku/node-js-getting-started"
   },
   "keywords": [
     "node",
     "heroku",
     "express"
-  ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-  "author": "Mark Pundsack",
-  "contributors": [
-    "Zeke Sikelianos <zeke@sikelianos.com> (http://zeke.sikelianos.com)"
-  ],
->>>>>>> update license, contributors, and keywords
-=======
->>>>>>> upgrade express dependency
-  "license": "MIT"
+  ]
 }

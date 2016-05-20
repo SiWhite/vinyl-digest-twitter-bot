@@ -1,43 +1,6 @@
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
   "name": "Vinyl Digest Twitter bot",
   "description": "Twitter bot for retweeting #vinyl",
   "repository": "https://github.com/SiWhite/vinyl-digest-twitter-bot",
   "keywords": ["node", "express", "twit"]
-=======
-  "name": "Node.js  Slideshow",
-=======
-  "name": "Node.js Sample",
->>>>>>> update app.json
-=======
-  "name": "Node.js Getting Started",
->>>>>>> Replace node-js-sample by node-js-getting-started
-  "description": "A barebones Node.js app using Express 4",
-  "repository": "https://github.com/heroku/node-js-getting-started",
-  "logo": "http://node-js-sample.herokuapp.com/node.svg",
-<<<<<<< HEAD
-  "keywords": ["node", "express", "static"]
->>>>>>> add app.json
-=======
-  "keywords": ["node", "express", "static"],
-<<<<<<< HEAD
-  "image": "heroku/node"
->>>>>>> add "image" key for heroku-docker
-=======
-  "image": "heroku/nodejs"
->>>>>>> use correct image name
 }
-=======
-  "name": "Vinyl; Digest Twitter bot",
-=======
-  "name": "Vinyl Digest Twitter bot",
->>>>>>> add regex to filter out that damn TV show
-  "description": "Twitter bot for retweeting #vinyl",
-  "repository": "https://github.com/SiWhite/vinyl-digest-twitter-bot",
-  "keywords": ["node", "express", "twit"]
-}
->>>>>>> update README and app.json, uninstall ejs module and add comments to index.js
