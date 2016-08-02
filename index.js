@@ -27,8 +27,8 @@ var prevTweetID = '';
 
 setInterval(function() {
 	console.log('setInterval ran');
-	reTweet(); }, 1800000 // 30 minutes
-	// reTweet(); }, 60000 // 1 minute
+	//reTweet(); }, 1800000 // 30 minutes
+	 reTweet(); }, 60000 // 1 minute
 );
 
 function reTweet() {
@@ -41,6 +41,7 @@ function reTweet() {
 			console.log('tweetID = '+tweetID);
 			if ( regexReject.test(tweet.text) || tweetID === undefined || tweetID == prevTweetID ) {
 				console.log('TWEET REJECTED!!!');
+				reTweet();
 				return;
 			} else {
 				twitter.post('statuses/retweet/:id', { id: tweetID }, function (err, data, response) {
