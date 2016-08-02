@@ -42,7 +42,6 @@ function reTweet() {
 			if ( regexReject.test(tweet.text) || tweetID === undefined || tweetID == prevTweetID ) {
 				console.log('TWEET REJECTED!!!');
 				reTweet();
-				return;
 			} else {
 				twitter.post('statuses/retweet/:id', { id: tweetID }, function (err, data, response) {
 					prevTweetID = tweetID;
