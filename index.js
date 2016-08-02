@@ -24,7 +24,6 @@ Date.prototype.yyyymmdd = function() {
 var date = new Date();
 date = date.yyyymmdd();
 var prevTweetID = '';
-var tweet = null;
 
 setInterval(function() {
 	console.log('setInterval ran');
@@ -34,15 +33,15 @@ setInterval(function() {
 
 function reTweet() {
 	console.log('prevTweetID = '+prevTweetID);
+
 	twitter.get('/search/tweets', { q: '#vinyl since:'+date, count: 1, language: 'en' }, function(err, data, response){
-		tweet = data.statuses[0];
+		var tweet = data.statuses[0];
 		if (tweet !== undefined) {
 			var tweetID = tweet.id_str
 			console.log('tweetID = '+tweetID);
 			if ( regexReject.test(tweet.text) || tweetID === undefined || tweetID == prevTweetID ) {
 				console.log('TWEET REJECTED!!!');
-				tweet = null;
-				reTweet();
+				return;
 			} else {
 				twitter.post('statuses/retweet/:id', { id: tweetID }, function (err, data, response) {
 					prevTweetID = tweetID;
