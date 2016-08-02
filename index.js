@@ -9,8 +9,8 @@ var twitInfo = require('./config.js'); //add twitter app keys/tokens in config.j
 app.get('/', function(req, res){ res.send('Vinyl Digest bot is happily running.'); });
 app.listen(process.env.PORT || 5000);
 
-// reject tweets about that damn TV show...
-var regexReject = new RegExp('^.*(show|Olivia|Wilde|Sky|ebay|episode|hbo|@HBO|@vinylHBO|s01|@SkyAtlanticHD|@SkyAtlantic|TV|carpet|flooring|S1|#vinylHBO|RT|Decal|banner|print|Scorsese|Laminate|binding|signs|nude|sex|meulino|cherry|xxx|adult|sexy|sohot|sweet16|boombap|musicsupervisor|upholstery|stickers|cunt|fuck|fucked|#petsofinstagram|#oahu|#rolltide|#lecheria|#feelingblessed|#niggas|#listenlive).*$', 'i');
+// reject tweets about that damn TV show and other crap...
+var regexReject = new RegExp('^.*(show|Olivia|Wilde|Sky|ebay|episode|hbo|@HBO|@vinylHBO|s01|@SkyAtlanticHD|@SkyAtlantic|TV|carpet|flooring|S1|#vinylHBO|RT|Decal|banner|print|Scorsese|Laminate|binding|signs|nude|sex|meulino|cherry|xxx|adult|sexy|sohot|sweet16|boombap|musicsupervisor|upholstery|stickers|cunt|fuck|fucked|#petsofinstagram|#oahu|#rolltide|#lecheria|#feelingblessed|#niggas|#listenlive|etsy|amzn).*$', 'i');
 
 var twitter = new Twit(twitInfo);
 
