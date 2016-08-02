@@ -27,8 +27,8 @@ var prevTweetID = '';
 
 setInterval(function() {
 	console.log('setInterval ran');
-	//reTweet(); }, 1800000 // 30 minutes
-	 reTweet(); }, 60000 // 1 minute
+	reTweet(); }, 1800000 // 30 minutes
+	//reTweet(); }, 60000 // 1 minute
 );
 
 function reTweet() {
