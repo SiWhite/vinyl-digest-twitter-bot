@@ -1,26 +1,26 @@
 {
-  "name": "node-js-getting-started",
-  "description": "A sample Node.js app using Express 4",
-  "main": "index.js",
-  "version": "0.0.1",
-  "description": "Simple Twitter Bot",
-  "scripts": {
-    "start": "node index.js"
-  },
-  "dependencies": {
-    "express": "4.13.3",
-    "twit": "~2.2.2"
-  },
-  "engines": {
-    "node": "0.12.7",
-    "express": "~4.9.x",
-    "ejs": "2.3.3",
-    "express": "4.13.3",
-    "twit": "~2.2.2"
-  },
-  "keywords": [
-    "node",
-    "heroku",
-    "express"
-  ]
+	"name": "node-js-getting-started",
+	"description": "A sample Node.js app using Express 4",
+	"main": "index.js",
+	"version": "0.0.1",
+	"description": "Simple Twitter Bot",
+	"scripts": {
+		"start": "node index.js"
+	},
+	"dependencies": {
+		"express": "4.13.3",
+		"twit": "~2.2.2"
+	},
+	"engines": {
+		"node": "0.12.7",
+		"express": "~4.9.x",
+		"ejs": "2.3.3",
+		"express": "4.13.3",
+		"twit": "~2.2.2"
+	},
+	"keywords": [
+	"node",
+	"heroku",
+	"express"
+	]
 }
