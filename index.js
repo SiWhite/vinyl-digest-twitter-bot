@@ -6,11 +6,11 @@ var Twit = require('twit');
 var twitInfo = require('./config.js'); //add twitter app keys/tokens in config.js
 
 // this is for heroku deployment, so we can see if it's running
-app.get('/', function(req, res){ res.send('Vinyl Digest bot is happily running.'); });
+app.get('/', function(req, res){ res.send('Vinyl Digest bot is still happily running.'); });
 app.listen(process.env.PORT || 5000);
 
 // reject tweets about that damn TV show and other crap...
-var regexReject = new RegExp('[^!@#$%^&*]*(show|Olivia|Wilde|Sky|ebay|episode|hbo|@HBO|@vinylHBO|s01|@SkyAtlanticHD|@SkyAtlantic|TV|carpet|carpeting|#deal|floor|flooring|S1|vinylHBO|RT|Decal|banner|print|Scorsese|Laminate|binding|signs|nude|sex|meulino|cherry|xxx|adult|sexy|sohot|sweet16|boombap|musicsupervisor|upholstery|sticker|stickers|cunt|fuck|fucked|cock|petsofinstagram|oahu|rolltide|lecheria|feelingblessed|niggas|listenlive|homeowner|1956|Retweet|bethafanetwork|forró|Forro|NowPlaying|Ou.a|#Forrozim|@wmmorgan)[^!@#$%^&*]', 'i');
+var regexReject = new RegExp('[^!@#$%^&*]*(show|Olivia|Wilde|Sky|ebay|episode|hbo|@HBO|@vinylHBO|s01|@SkyAtlanticHD|@SkyAtlantic|TV|carpet|carpeting|#deal|floor|flooring|S1|vinylHBO|RT|Decal|banner|print|Scorsese|Laminate|binding|signs|nude|sex|meulino|cherry|xxx|adult|sexy|sohot|sweet16|boombap|musicsupervisor|upholstery|sticker|stickers|cunt|fuck|fucked|cock|petsofinstagram|oahu|rolltide|lecheria|feelingblessed|niggas|listenlive|homeowner|1956|Retweet|bethafanetwork|forró|Forro|NowPlaying|Ou.a|#Forrozim|@wmmorgan|hmv|eastendbarber)[^!@#$%^&*]', 'i');
 
 var twitter = new Twit(twitInfo);
 
