@@ -1,4 +1,4 @@
-# Twitter Bot for @vinyl_digest.
+# Twitter Bot 
 
 A simple Node.js app using [Twit](https://github.com/ttezel/twit).
 
